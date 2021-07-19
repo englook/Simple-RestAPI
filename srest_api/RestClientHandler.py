@@ -9,7 +9,6 @@ from socketserver import ForkingMixIn, ThreadingMixIn
 from exceptions import NotFoundResponse
 from exceptions import InvalidTokenAuthorization
 from exceptions import BadRequestResponse
-from exceptions import ServerErrorResponse
 from utils import multipart_to_dict
 from utils import TOKEN_AUTHORIZATION
 

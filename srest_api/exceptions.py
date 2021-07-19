@@ -25,10 +25,4 @@ class BadRequestResponse(ExceptionResponse):
 	def __init__(self, msg):
 		ExceptionResponse.__init__(self, {'error': msg}, status=HTTP_400_BAD_REQUEST)
 
-
-class ServerErrorResponse(ExceptionResponse):
-	def __init__(self, msg):
-		ExceptionResponse.__init__(self, {'error': msg}, status=HTTP_500_INTERNAL_SERVER_ERROR)
-
-
 # end-of-file
