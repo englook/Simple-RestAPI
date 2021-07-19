@@ -8,7 +8,7 @@ log = logging.getLogger(__name__)
 def main():
 
 	server_address = (sys.argv[1], int(sys.argv[2]))
-	with HTTPServer(server_address, ClientHandler) as rest_api:
+	with HTTPServer(server_address, RestClientHandler) as rest_api:
 		try:
 			log.warning(f'Access server on.. http://{server_address[0]}:{server_address[1]}/')
 			rest_api.serve_forever()
